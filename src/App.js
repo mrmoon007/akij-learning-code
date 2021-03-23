@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Array from './components/Array';
+import React,{useState} from 'react'
+import CounterClass from './components/CounterClass';
+import FunctionCunter from './components/CounterFunction';
+import Child1 from './components/Child1';
+import Form from './components/Form';
+
 
 function App() {
+
+  const [counter,setCounter]=useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <p>This is Functional Component</p>
+        <FunctionCunter />
+      <hr></hr>
+      <p>This is Class Component</p>
+      <CounterClass />
+      <hr></hr>
+      <Array />
+      <hr></hr>
+      <Child1 counter={counter} setCounter={setCounter} />
+      <hr></hr> */}
+      <Form />
     </div>
   );
 }
